@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #153B50;
+  --color-teal: #159A9C;
+  --color-mint: #E9F6F3;
+  --color-light-bg: #F7FAFC;
+  --color-ivory: #FAF8F5;
+  --color-ink: #243746;
+  --color-gold: #C7A76C;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #243746;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--font-sans);
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #159A9C;
+    outline-offset: 2px;
+  }
+}
+
+.clinic-card-shadow {
+  box-shadow: 0 10px 30px -8px rgba(21, 59, 80, 0.08), 0 2px 8px -2px rgba(21, 59, 80, 0.04);
+}
+
+.clinic-card-shadow-hover {
+  box-shadow: 0 20px 42px -12px rgba(21, 59, 80, 0.14), 0 4px 12px -2px rgba(21, 59, 80, 0.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

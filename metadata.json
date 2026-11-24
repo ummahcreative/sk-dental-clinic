@@ -1,0 +1,6 @@
+{
+  "name": "Dr. SK Dental Clinic Hyderabad",
+  "description": "Looking for dental care in Hyderabad? Explore preventive, restorative, cosmetic and specialized dental treatments at Dr. SK Dental Clinic. Request an appointment with Dr. Safreena Khathun.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
